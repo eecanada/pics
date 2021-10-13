@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  state = { term: '' };
+  state = { term: 'Italy' };
 
   onFormSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +12,7 @@ class SearchBar extends React.Component {
       <div className="ui segment">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div>
-            <label> Image Search</label>
+            <label> Search Photos: </label>
             <input
               type="text"
               value={this.state.term}
